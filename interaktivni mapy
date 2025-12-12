@@ -1,5 +1,9 @@
 CzechTeam/
+├─ index.html       <-- hlavní stránka s PEGASUS
+├─ style.css
+├─ pegasus.jpg
 └─ interaktivni-mapy/
+    └─ index.html   <-- stránka pro mapy
 <!DOCTYPE html>
 <html lang="cs">
 <head>

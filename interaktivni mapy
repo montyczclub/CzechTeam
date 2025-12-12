@@ -3,3 +3,19 @@ CzechTeam/
 ├─ style.css
 ├─ pegasus.jpg
 └─ mapy/           <-- nová složka
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Interaktivní mapy</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>MAPY</h2>
+    </div>
+    <div class="main-content">
+        <h1>Zde budou interaktivní mapy</h1>
+    </div>
+</body>
+</html>

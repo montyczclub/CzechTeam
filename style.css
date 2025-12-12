@@ -65,51 +65,33 @@ body {
 
 /* Linky uvnitř seznamu */
 .map-links li a {
-    color: #ffffff;              /* barva linku */
+    color: #ffffff;               
     text-decoration: none;
     font-weight: bold;
     display: block;
     padding-left: 10px;
-    opacity: 0;                   /* vizuálně skryté */
+    opacity: 0;                   
     transform: translateX(-20px);
     transition: transform 0.3s, opacity 0.3s;
-    pointer-events: none;         /* neklikatelný, dokud není zobrazen */
+    pointer-events: none;         
 }
 /* Nadpis Mapy */
 .map-title {
     text-align: center;
-    color: #ff0000;               /* červená barva */
+    color: #ff0000;               
     cursor: pointer;
-    transition: color 0.3s, transform 0.3s; /* plynulý efekt */
+    transition: color 0.3s, transform 0.3s;
 }
 
 .map-title:hover {
-    color: #ff5555;               /* světlejší červená při hover */
-    transform: scale(1.05);       /* mírné zvětšení */
+    color: #ff5555;               
+    transform: scale(1.05);       
 }
 
-/* Seznam linků pod nadpisem */
-.map-links {
-    margin-top: 10px;
-    list-style-type: none;
-    padding: 0;
-}
 
-/* Linky uvnitř seznamu */
-.map-links li a {
-    color: #ffffff;               /* barva linku */
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    padding-left: 10px;
-    opacity: 0;                   /* vizuálně skryté */
-    transform: translateX(-20px);
-    transition: transform 0.3s, opacity 0.3s;
-    pointer-events: none;         /* neklikatelný dokud není zobrazen */
-}
 
 /* Při hoveru nadpisu Mapy se odkaz zobrazí a stane klikacím */
-.map-title:hover + .map-links li a {
+.map-title:hover ~ .map-links li a {
     opacity: 1;
     transform: translateX(0);
     pointer-events: auto;         /* teď lze kliknout */

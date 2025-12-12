@@ -56,3 +56,32 @@ body {
     margin-top: 40px;                   /* odsazení od horního okraje */
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* jemný stín pro lepší čitelnost */
 }
+/* Skryjeme linky pod nadpisem */
+.map-links {
+    display: none;      /* neviditelné, dokud se nenajede myší */
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Linky uvnitř seznamu */
+.map-links li a {
+    color: #ff0000;        /* červená textu */
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding-left: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+/* Při najetí na nadpis Mapy se zobrazí link */
+.map-title:hover + .map-links {
+    display: block;
+}
+
+.map-title:hover + .map-links li a {
+    opacity: 1;
+    transform: translateX(0);
+}

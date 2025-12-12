@@ -47,7 +47,10 @@ body {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s, opacity 0.3s;
+    opacity: 0;
+    transform: translateX(-20px);
+    pointer-events: none;
 }
 
 .map-links li a:hover {
@@ -55,7 +58,7 @@ body {
 }
 
 /* Zobrazení linků při hover nadpisu */
-.map-title:hover + .map-links {
+.map-title:hover ~ .map-links {
     display: block;
 }
 

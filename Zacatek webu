@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CzechTeam</title>
+</head>
+
+<body>
+    <h1>Vítej na stránce CzechTeam!</h1>
+    <p>Toto je základní stránka, později přidáme interaktivní mapu.</p>
+</body>
+</html>

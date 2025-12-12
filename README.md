@@ -1,1 +1,52 @@
 # CzechTeam
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+
+    /* Pozadí */
+    background-image: url('pegasus.jpg');  /* upraveno podle názvu souboru */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: rgba(27, 27, 27, 0.85);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #00bfff;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+}

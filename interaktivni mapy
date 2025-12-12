@@ -1,10 +1,11 @@
 CzechTeam/
-├─ index.html        ← hlavní stránka s PEGASUS
+├─ index.html             <-- hlavní stránka
 ├─ style.css
 ├─ pegasus.jpg
-└─ interaktivni-mapy/      ← stránka s mapami
-    └─ epsilon-krau/        ← podsložka pro konkrétní mapu
-        └─ index.html       ← sem vložíte interaktivní mapu později
+└─ interaktivni-mapy/
+    └─ epsilon-krau/
+        └─ index.html    <-- stránka pro konkrétní mapu
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>

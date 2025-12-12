@@ -17,4 +17,9 @@
 
 </body>
 </html>
-
+CzechTeam/
+├─ index.html       <-- hlavní stránka
+├─ style.css
+├─ pegasus.jpg
+└─ mapy/
+    └─ index.html   <-- stránka s mapami

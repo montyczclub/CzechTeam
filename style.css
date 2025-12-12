@@ -5,7 +5,7 @@ body {
     height: 100vh;
 
     /* Pozadí */
-    background-image: url('obrazky/pegas_us.png');
+    background-image: url('pegasus.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

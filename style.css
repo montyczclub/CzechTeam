@@ -58,24 +58,30 @@ body {
 }
 /* Skryjeme linky pod nadpisem */
 .map-links {
-    display: none;      /* neviditelné, dokud se nenajede myší */
+    max-height: 0;               /* skryté */
+    overflow: hidden;            /* nic se nezobrazí */
     margin-top: 10px;
     list-style-type: none;
     padding: 0;
+    transition: max-height 0.5s ease; /* plynulý efekt vysunutí */
 }
 
 /* Linky uvnitř seznamu */
 .map-links li a {
-    color: #ff0000;        /* červená textu */
+    color: #ffffff;              /* barva linku */
     text-decoration: none;
     font-weight: bold;
     display: block;
     padding-left: 10px;
-    transition: transform 0.3s, opacity 0.3s;
     opacity: 0;
     transform: translateX(-20px);
+    transition: transform 0.3s, opacity 0.3s;
 }
-
+/* Animace linku */
+.map-title:hover + .map-links li a {
+    opacity: 1;
+    transform: translateX(0);
+}   
 /* Při najetí na nadpis Mapy se zobrazí link */
 .map-title:hover + .map-links {
     display: block;
@@ -84,6 +90,9 @@ body {
 .map-title:hover + .map-links li a {
     opacity: 1;
     transform: translateX(0);
+}
+.map-title:hover + .map-links {
+    max-height: 100px;           /* dostatečná výška pro link */
 }
 .map-title {
     text-align: center;

@@ -58,17 +58,17 @@ body {
 }
 /* Skryjeme linky pod nadpisem */
 .map-links {
-    max-height: 0;               /* skryté */
-    overflow: hidden;            /* nic se nezobrazí */
+    height: 0;
+    overflow: hidden;
     margin-top: 10px;
     list-style-type: none;
     padding: 0;
-    transition: max-height 0.5s ease; /* plynulý efekt vysunutí */
+    transition: height 0.3s ease;
 }
 
 /* Linky uvnitř seznamu */
 .map-links li a {
-    color: #ffffff;              /* barva linku */
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     display: block;
@@ -84,9 +84,9 @@ body {
 }   
 /* Při najetí na nadpis Mapy se zobrazí link */
 .map-title:hover + .map-links {
-    display: block;
+    height: 40px; /* nastav výšku podle počtu linků */
 }
-
+/* Animace linku */
 .map-title:hover + .map-links li a {
     opacity: 1;
     transform: translateX(0);

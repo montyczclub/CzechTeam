@@ -50,9 +50,9 @@ body {
     overflow-y: auto;
 }
 .welcome-text {
-    text-align: center;       /* zarovná text na střed */
-    color: #00bfff;           /* barva textu */
-    font-size: 48px;          /* velikost textu */
-    margin-top: 200px;        /* odsazení od horního okraje */
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* jemný stín pro lepší čitelnost */
+    text-align: center;                 /* horizontální zarovnání */
+    color: #006400;                     /* tmavě zelená */
+    font-size: 48px;                    /* velikost textu */
+    margin-top: 40px;                   /* odsazení od horního okraje */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* jemný stín pro lepší čitelnost */
 }

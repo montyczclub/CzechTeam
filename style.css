@@ -85,3 +85,14 @@ body {
     opacity: 1;
     transform: translateX(0);
 }
+.map-title {
+    text-align: center;
+    color: #ff0000;               /* červená barva */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s; /* plynulý efekt */
+}
+
+.map-title:hover {
+    color: #ff5555;               /* světlejší červená při hover */
+    transform: scale(1.05);       /* mírné zvětšení */
+}

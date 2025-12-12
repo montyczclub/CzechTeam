@@ -19,7 +19,12 @@ CzechTeam/
 </div>
 
 <div class="main-content">
-    <h1>Zde budou interaktivní mapy</h1>
+    <h1>Interaktivní mapy</h1>
+    <ul>
+        <li>
+            <a href="epsilon-krau/index.html" style="color: #00ff00; font-weight: bold;">Epsilon Krau</a>
+        </li>
+    </ul>
 </div>
 
 </body>

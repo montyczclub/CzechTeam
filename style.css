@@ -1,23 +1,17 @@
-/* CELÉ POZADÍ A LAYOUT */
+/* Základní styl body a pozadí */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     display: flex;
     height: 100vh;
-
-    /* Pozadí */
-    background-image: url('pegasus.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('pegasus.jpg') center/cover no-repeat;
     color: #fff;
 }
 
-/* SIDEBAR */
+/* Sidebar */
 .sidebar {
     width: 220px;
-    background-color: rgba(27, 27, 27, 0.85);
-    color: #fff;
+    background-color: rgba(27,27,27,0.85);
     padding: 20px;
     box-sizing: border-box;
 }
@@ -26,45 +20,33 @@ body {
     text-align: center;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 15px 0;
-}
-
-/* NADPIS MAPY */
+/* Nadpis MAPY */
 .map-title {
     text-align: center;
-    color: #ff0000;               /* červená barva */
+    color: #ff0000;
     cursor: pointer;
     transition: color 0.3s, transform 0.3s;
 }
 
 .map-title:hover {
-    color: #ff5555;               /* světlejší červená při hover */
+    color: #ff5555;
     transform: scale(1.05);
 }
 
-/* SEZNAM LINKŮ POD MAPY */
+/* Seznam linků pod nadpisem */
 .map-links {
     margin-top: 10px;
-    list-style-type: none;
     padding: 0;
-    display: none;                 /* skryté dokud se nenajede */
+    list-style: none;
+    display: none;       /* skryté dokud nenajedeš myší */
 }
 
-/* LINKY UVNITŘ SEZNAMU */
 .map-links li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
     display: block;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0 5px 10px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
     transition: color 0.3s;
 }
 
@@ -72,23 +54,23 @@ body {
     color: #00bfff;
 }
 
-/* ZOBRAZENÍ LINKŮ PŘI HOVERU NADPISU */
+/* Zobrazení linků při hover nadpisu */
 .map-title:hover + .map-links {
     display: block;
 }
 
-/* HLAVNÍ OBSAH */
+/* Hlavní obsah */
 .main-content {
     flex: 1;
     padding: 40px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0,0,0,0.4);
     overflow-y: auto;
 }
 
 .welcome-text {
-    text-align: center;                 
-    color: #006400;                     
-    font-size: 48px;                    
-    margin-top: 40px;                   
+    text-align: center;
+    color: #006400;
+    font-size: 48px;
+    margin-top: 40px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }

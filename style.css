@@ -49,3 +49,10 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     overflow-y: auto;
 }
+.welcome-text {
+    text-align: center;       /* zarovná text na střed */
+    color: #00bfff;           /* barva textu */
+    font-size: 48px;          /* velikost textu */
+    margin-top: 200px;        /* odsazení od horního okraje */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* jemný stín pro lepší čitelnost */
+}

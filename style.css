@@ -15,8 +15,7 @@ h1{
 }
 
 
-
-/* POSTRANNÍ OBDELNÍK */
+       /* POSTRANNÍ OBDELNÍK */
 .side-panel {
     position: fixed;
     top: 50%;
@@ -41,4 +40,5 @@ h1{
 .side-panel:hover {
     width: 200px;
 }
+
 

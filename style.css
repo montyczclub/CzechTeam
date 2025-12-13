@@ -15,17 +15,3 @@ h1{
 }
 
 
-.box {
-    width: 300px;
-    height: 200px;
-
-    border: 2px solid rgba(255, 255, 255, 0.7); /* jemný okraj */
-    border-radius: 15px;                        /* zaoblené rohy */
-
-    background: rgba(0, 0, 0, 0.4);              /* průhledné pozadí */
-    backdrop-filter: blur(8px);                 /* rozmazání pozadí */
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);  /* stín */
-
-    margin: 50px auto;                           /* vycentrování */
-}

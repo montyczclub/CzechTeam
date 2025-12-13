@@ -41,4 +41,21 @@ h1{
     width: 200px;
 }
 
+     body {
+    margin: 0; /* odstraní defaultní okraje */
+    padding: 0;
+    height: 100%;
+    overflow-y: auto; /* vertikální scroll */
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
 
